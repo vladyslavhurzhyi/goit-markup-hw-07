@@ -71,7 +71,7 @@ ul {
     display: flex;
     align-items: center;
 }
-.nav__main{
+.nav-main{
     margin-right: auto;
 }
 
@@ -99,11 +99,11 @@ ul {
     margin: 0;
 }
 
-.nav__item {
+.nav-item {
     position: relative;
 }
 
-.nav__item:not(:last-child)  {
+.nav-item:not(:last-child)  {
 
     margin-right: 50px;
 }
@@ -159,13 +159,13 @@ ul {
     color: var(--btncolor-hover);
 }
 
-.contact__link:hover .nav__icon,
-.contact__link:focus .nav__icon {
+.contact__link:hover .nav-item__icon,
+.contact__link:focus .nav-item__icon {
     fill: var(--btncolor-hover);
 }
 
 
-.nav__icon {
+.nav-item__icon {
     fill: #757575;
     margin-right: 10px;
     transition-property: fill, color;
@@ -294,7 +294,7 @@ ul {
 }
 
 
-.about__title {
+.about__title, .client__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -455,8 +455,8 @@ ul {
 }
 
 
-.social__link:hover .icon__svg, 
-.social__link:focus .icon__svg {
+.social__link:hover .social__svg, 
+.social__link:focus .social__svg {
     fill: #FFFFFF;
 }
 
@@ -465,7 +465,7 @@ ul {
 
 
 
-.icon__svg {
+.social__svg {
     fill: #AFB1B8;
     transition-property: fill;
     transition-duration: 250ms;
@@ -501,8 +501,8 @@ ul {
 
 }
 
-.client__item:hover .icon__svg,
-.client__item:focus .icon__svg {
+.client__item:hover .social__svg,
+.client__item:focus .social__svg {
     fill: #2196F3;
     
 }
@@ -569,7 +569,7 @@ ul {
 }
 
 
-.portfolio__list {
+.portfolio-list {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -914,11 +914,11 @@ button {
     background-color: var(--btncolor-hover);
 }
 
-.current__text {
+.current-text {
     color: var(--btncolor-hover);
 }
 
-.current__text::after {
+.current-text::after {
 
     content: "";
     display: block;
@@ -945,13 +945,14 @@ button {
 }
 
 
-.footersoc__title {
+.footersoc__title, .footerform__title {
     color: #FFFFFF;
     font-size: 14px;
     margin: 0;
     margin-bottom: 20px;
-    
 }
+
+
 
 .footersoc {
     margin-left: 70px;
@@ -1193,14 +1194,14 @@ border-radius: 4px;
 }
 
 
-.checkbox__form {
+.formcheckbox {
     padding-left: 52px;
     padding-right: 52px;
     margin-bottom: 30px;
 
 }
 
-.checkbox__text {
+.formcheckbox__text {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
@@ -1210,7 +1211,7 @@ border-radius: 4px;
     
 }
 
-.checkbox__text span {
+.formcheckbox__text span {
     width: 16px;
     height: 15px;
     border-radius: 2px;
@@ -1220,17 +1221,17 @@ border-radius: 4px;
     margin-right: 7px;
 }
 
-.checkbox__span {
+.formcheckbox__span {
     display: flex;
 }
 
-.checkbox__icon {
+.formcheckbox__icon {
     fill: transparent;
 }
 
 
 
-.checkbox__link {
+.formcheckbox__link {
     text-decoration-line: underline;
     color: #2196F3;
     margin-left: auto;
@@ -1241,7 +1242,7 @@ border-radius: 4px;
 
 }
 
-.btn__form {
+.btn-wrap__form {
     
     width: 200px;
     height: 50px;
@@ -1266,14 +1267,14 @@ border-radius: 4px;
 
 }
 
-.btn__wrap {
+.btn-wrap {
     margin-bottom: 40px;
 }
 
 
 
-.btn__form:hover,
-.btn__form:focus {
+.btn-wrap__form:hover,
+.btn-wrap__form:focus {
     background: #188CE8;
     
 }
@@ -1305,7 +1306,7 @@ border-radius: 4px;
 }
 
 
-.checkbox:checked + .checkbox__text span {
+.checkbox:checked + .formcheckbox__text span {
     background-color: var(--btncolor-hover);
     border: none;
 }
